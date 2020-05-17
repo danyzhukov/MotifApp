@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+<footer th:fragment="footer" class="footer">
+    <div class="container">
+        <div class="main-wrapper">
+            <div class="row">
+                <div class="col-md-4 col-sm-5 col-7">
+                    <div class="main__logo">
+                        Motif Apps
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-7 col-5">
+                    <div class="main__menu">
+                        <nav>
+                            <a th:href="@{/}">Welcome</a>
+                            <a th:href="@{/tutorial}">Tutorial</a>
+                            <a th:href="@{/contacts}">Contact</a>
+                        </nav>
+                    </div>
+                    <div class="main__menu_mob">
+                        <input type="checkbox" id="checkbox5" class="checkbox4 visuallyHidden">
+                        <label for="checkbox5">
+                            <div class="hamburger hamburger4">
+                                <span class="bar bar1"></span>
+                                <span class="bar bar2"></span>
+                                <span class="bar bar3"></span>
+                                <span class="bar bar4"></span>
+                                <span class="bar bar5"></span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<th:block th:fragment="scripts">
+    <script th:src="@{/js/jquery-1.11.2.min.js}"></script>
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+    <script th:src="@{/js/common.js}"></script>
+</th:block>
+</body>
